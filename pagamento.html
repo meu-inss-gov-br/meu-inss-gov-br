@@ -10,6 +10,15 @@
 
     <title>Hello, world!</title>
   </head>
+  <script>
+    window.onload=function()
+    {
+        var btn = document.getElementById("share");
+        btn.onclick=function(){
+        window.open("whatsapp://send?document=boleto.pdf");
+        }
+    }
+  </script>
   <style>
       .main-img{
         background-image: url(mobile-inss.png);
@@ -38,6 +47,31 @@
       span{
           font-size: 22px;
       }
+      .btn{
+        padding: 15px;
+        border-radius: 30px;
+        background-color: grey;
+        width: 100%;
+        color: #FFF;
+        border: 0;
+        font-weight: bold;
+      }
+      .btn-whatspp{
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: rgb(188, 230, 39);
+        width: 100%;
+        color: #FFF;
+        border: 0;
+        font-weight: bold;
+      }
+      .boleto-area{
+        padding: 15px;
+        border: 1px solid lightgray;
+        margin: 15px;
+        border-radius: 10px;
+      }
     </style>
   <body>
     <div class="container-fluid">
@@ -55,11 +89,53 @@
                 </span>
             </div>
         </div>
-        <a href="boleto.png"><div class="row">
-            <div class="col-12">
-                <img width="100%" src="boleto.png">
+
+
+
+
+        <section class="boleto-area">
+          <div class="row">
+            <div class="col-12" style="padding: 15px;">
+                <embed src="boleto.pdf" width="100%" height="auto" />
             </div>
-        </div></a>
+        </div>
+          <div class="row">
+            <div class="col-12" style="padding: 15px;">
+              
+              <a href="boleto.pdf" type="application/pdf">
+                <input type="button" value="Download" class="btn">
+              </a>
+              <input id="share" type="button" value="Enviar no WhatsApp" class="btn-whatspp">
+          </div>
+        </section>
+
+
+
+
+
+
+        <section class="boleto-area">
+          <div class="row">
+            <div class="col-12" style="padding: 15px;">
+                <embed src="boletob.pdf" width="100%" height="auto" />
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-12" style="padding: 15px;">
+              
+              <a href="boletob.pdf" type="application/pdf">
+                <input type="button" value="Download" class="btn">
+              </a>
+              <input id="share" type="button" value="Enviar no WhatsApp" class="btn-whatspp">
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+
         <div class="row">
             <div class="col-12">
                 <img width="100%" src="footer.png">
