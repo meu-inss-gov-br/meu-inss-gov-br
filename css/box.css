@@ -81,7 +81,7 @@
     background-color: #FFF;
 }
 .up {
-    transform: translateY(-0%);
+    transform: translateY(0px);
 }
 .down {
     display: block;
@@ -102,7 +102,7 @@
 
 @media (min-width: 1165px) { 
     .up {
-        transform: translateY(-64%);
+        transform: translateY(-256px);
     }
     .down {
         display: none;
