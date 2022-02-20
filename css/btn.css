@@ -56,10 +56,13 @@
 }
 
 .a {
-    background-color: #ffa41c;
+    background: #FFA41C;
+    border-color: #FF8F00;
+    padding: 0px;
 }
 .b {
-    background-color: #ffd814;
+    background: #FFD814;
+    border-color: #FCD200;
 }
 .ultil {
     background: #FFF;
